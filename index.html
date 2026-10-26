@@ -165,6 +165,38 @@
       .timeline-item li {
         margin-bottom: 4px;
       }
+            .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .project {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      .project-meta {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+      }
+
+      .project h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .project-desc {
+        color: var(--muted);
+        font-size: 15px;
+        margin-bottom: 16px;
+      }
     </style>
   </head>
   <body>
@@ -269,6 +301,21 @@
               <li>Consolidated cross-channel KPIs across NA, UK, and France to guide media allocation</li>
               <li>Built UTM tracking across 20+ influencer partners to measure true partner ROI</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="section">
+      <div class="container">
+        <p class="section-title">PROJECTS</p>
+        <div class="projects">
+          <div class="project">
+            <p class="project-meta">EMORY HEALTHCARE · FALL 2026</p>
+            <h3>Accounts Payable and Working Capital Optimization</h3>
+            <p class="project-desc">Built Python pipelines to clean and validate 2.4M+ ERP invoice records, standardized non-compliant payment codes, and reconciled vendor and transaction data to surface payment routing errors.</p>
+            <span class="chip">Python</span>
+            <span class="chip">Data Cleaning</span>
+            <span class="chip">ERP Data</span>
           </div>
         </div>
       </div>

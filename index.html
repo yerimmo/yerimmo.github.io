@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yerim Mo | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #0B1120;
+        --card: #111827;
+        --border: #1F2937;
+        --text: #E2E8F0;
+        --muted: #94A3B8;
+        --accent: #5EEAD4;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .hero {
+        padding: 120px 0 80px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+
+      .hero h1 {
+        font-size: 56px;
+        font-weight: 800;
+        margin: 12px 0;
+      }
+
+      .tagline {
+        color: var(--muted);
+        font-size: 20px;
+        max-width: 600px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, I'm Yerim Mo</h1>
-    <p>Portfolio coming soon.</p>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">MSBA CANDIDATE · EMORY GOIZUETA</p>
+        <h1>Hi, I'm Yerim Mo</h1>
+        <p class="tagline">I turn data into stories. Business analytics meets strategic storytelling.</p>
+      </div>
+    </section>
   </body>
 </html>

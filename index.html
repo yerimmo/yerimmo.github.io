@@ -129,6 +129,42 @@
         font-size: 13px;
         margin: 0 6px 6px 0;
       }
+            .timeline-item {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        gap: 24px;
+        padding: 24px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .timeline-item:last-child {
+        border-bottom: none;
+      }
+
+      .date {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .role {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .company {
+        color: var(--accent);
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .timeline-item ul {
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .timeline-item li {
+        margin-bottom: 4px;
+      }
     </style>
   </head>
   <body>
@@ -168,7 +204,6 @@
         <p class="section-title">ABOUT</p>
         <div class="about">
           <div>
-            <p>I turn data into stories. My background is a unique mix of data analytics and strategic storytelling.</p>
             <p>I started my career with a degree in Journalism and PR from Boston University, which taught me how to communicate complex narratives clearly. I then brought those skills to Hyundai Department Store as an Assistant Manager on the VIP Marketing team, where I used SQL to dig into consumer data and solve high-stakes business problems, like evaluating location viability for new VIP lounges and branches.</p>
             <p>That experience showed me how powerful data becomes when paired with clear communication. Now at Emory, I'm sharpening my analytical toolkit to help organizations answer their most critical business questions.</p>
           </div>
@@ -190,6 +225,50 @@
               <span class="chip">RapidMiner</span>
               <span class="chip">AWS</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="section">
+      <div class="container">
+        <p class="section-title">EXPERIENCE</p>
+
+        <div class="timeline-item">
+          <p class="date">2024 - 2026</p>
+          <div>
+            <p class="role">Assistant Manager, VIP Marketing</p>
+            <p class="company">Hyundai Department Store · Seoul</p>
+            <ul>
+              <li>Forecasted VIP revenue and optimized tier thresholds in SQL, driving a 23% revenue increase</li>
+              <li>Redesigned loyalty rewards and eligibility, reducing program spend by 37%</li>
+              <li>Built international VIP programs from overseas spend trends, boosting international sales by 39%</li>
+              <li>Evaluated location viability for new VIP lounges and branches</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <p class="date">2023 - 2024</p>
+          <div>
+            <p class="role">Assistant Manager, Branch Marketing Strategy</p>
+            <p class="company">Hyundai Department Store · Seoul</p>
+            <ul>
+              <li>Segmented customers in SQL by trade area, spending, and visit frequency for targeted campaigns</li>
+              <li>Built monthly revenue and acquisition forecasting models to set performance benchmarks</li>
+              <li>Quantified net revenue impact of floorplan and tenant changes with pre/post analysis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <p class="date">Fall 2022</p>
+          <div>
+            <p class="role">Marketing Intern, Brand Activations</p>
+            <p class="company">Vistaprint · Waltham, MA</p>
+            <ul>
+              <li>Consolidated cross-channel KPIs across NA, UK, and France to guide media allocation</li>
+              <li>Built UTM tracking across 20+ influencer partners to measure true partner ROI</li>
+            </ul>
           </div>
         </div>
       </div>

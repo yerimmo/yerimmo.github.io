@@ -56,6 +56,36 @@
         font-size: 20px;
         max-width: 600px;
       }
+
+        .kpis {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        padding-bottom: 80px;
+      }
+
+      .kpi {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      .kpi-value {
+        color: var(--accent);
+        font-size: 36px;
+        font-weight: 800;
+      }
+
+      .kpi-label {
+        font-weight: 600;
+        margin-top: 4px;
+      }
+
+      .kpi-note {
+        color: var(--muted);
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
@@ -64,6 +94,30 @@
         <p class="eyebrow">MSBA CANDIDATE · EMORY GOIZUETA</p>
         <h1>Hi, I'm Yerim Mo</h1>
         <p class="tagline">I turn data into stories. Business analytics meets strategic storytelling.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container kpis">
+        <div class="kpi">
+          <p class="kpi-value">+23%</p>
+          <p class="kpi-label">VIP Revenue</p>
+          <p class="kpi-note">SQL forecasting and tier optimization</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi-value">-37%</p>
+          <p class="kpi-label">Program Spend</p>
+          <p class="kpi-note">Redesigned VIP loyalty rewards</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi-value">+39%</p>
+          <p class="kpi-label">International Sales</p>
+          <p class="kpi-note">Targeted overseas VIP programs</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi-value">2.4M+</p>
+          <p class="kpi-label">Invoice Records</p>
+          <p class="kpi-note">Python ERP data pipelines</p>
+        </div>
       </div>
     </section>
   </body>

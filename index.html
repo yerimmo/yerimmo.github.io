@@ -86,6 +86,49 @@
         color: var(--muted);
         font-size: 14px;
       }
+            .section {
+        padding: 80px 0;
+        border-top: 1px solid var(--border);
+      }
+
+      .section-title {
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 24px;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 48px;
+      }
+
+      .about p {
+        margin-bottom: 16px;
+      }
+
+      .skill-group {
+        margin-bottom: 20px;
+      }
+
+      .skill-group h3 {
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .chip {
+        display: inline-block;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 4px 12px;
+        font-size: 13px;
+        margin: 0 6px 6px 0;
+      }
     </style>
   </head>
   <body>
@@ -117,6 +160,37 @@
           <p class="kpi-value">2.4M+</p>
           <p class="kpi-label">Invoice Records</p>
           <p class="kpi-note">Python ERP data pipelines</p>
+        </div>
+      </div>
+    </section>
+        <section class="section">
+      <div class="container">
+        <p class="section-title">ABOUT</p>
+        <div class="about">
+          <div>
+            <p>I turn data into stories. My background is a unique mix of data analytics and strategic storytelling.</p>
+            <p>I started my career with a degree in Journalism and PR from Boston University, which taught me how to communicate complex narratives clearly. I then brought those skills to Hyundai Department Store as an Assistant Manager on the VIP Marketing team, where I used SQL to dig into consumer data and solve high-stakes business problems, like evaluating location viability for new VIP lounges and branches.</p>
+            <p>That experience showed me how powerful data becomes when paired with clear communication. Now at Emory, I'm sharpening my analytical toolkit to help organizations answer their most critical business questions.</p>
+          </div>
+          <div>
+            <div class="skill-group">
+              <h3>LANGUAGES</h3>
+              <span class="chip">SQL</span>
+              <span class="chip">Python</span>
+              <span class="chip">R</span>
+            </div>
+            <div class="skill-group">
+              <h3>VISUALIZATION & BI</h3>
+              <span class="chip">Tableau</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Excel</span>
+            </div>
+            <div class="skill-group">
+              <h3>ANALYTICS & CLOUD</h3>
+              <span class="chip">RapidMiner</span>
+              <span class="chip">AWS</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
